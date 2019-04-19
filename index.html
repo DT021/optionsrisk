@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -10,28 +9,79 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
+
 <body>
+	
+	
+	
 <h1>Options Risk Calculator</h1>
 <h3>Made by Andrew Falcon</h6>
 
 <p>
 	The stock's ticker symbol is
-	<input type="text">,
+	<input type="text" id="ticker">,
 	it currently costs 
-	<input type="text">,
+	<input type="text" id="price">,
 	the positive break even price is
-	<input type="text">,
+	<input type="text" id="beup">,
 	and the negative break even price is
-	<input type="text">.
+	<input type="text" id="bedown">.
 </p>
 
-<div class="calculate">
+<div class="buttons">
 <button id="calcbutt">Calculate Break Even Percentage</button>
 </div>
 
+<div class="results">
+<h1>Risk Results</h1>
+</div>
+
+<div class="scrolltable">
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+</div>
+	
+<div class="buttons">
+<button id="csvbutt">Download as CSV</button>
+</div>	
 	
 	
-	
+<script type="text/javascript" src="riskcalc.js"></script>
 </body>
 	
 </html>
